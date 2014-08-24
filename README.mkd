@@ -1,8 +1,8 @@
 # コーディング規約
 
-- [標準コーディング規約]()
-- [Objective-Cコーディング規約]()
-- [Javaコーディング規約]()
+- [標準コーディング規約](https://github.com/eure/style-guide/blob/master/standard.mkd)
+- [Objective-Cコーディング規約](https://github.com/eure/style-guide/blob/master/objective-c.mkd)
+- [Javaコーディング規約](https://github.com/eure/style-guide/blob/master/java.mkd)
 
 
 ## キーワード
