@@ -1,2 +1,115 @@
 # Objective-Cコーディング規約
 
+- [ドット演算子](#dot-notation-syntax)
+- [命名規則](#naming)
+- [プロパティ属性](#property-attributes)
+
+## ドット演算子 <a name="dot-notation-syntax">
+
+- **SHOULD**: ドット演算子はプロパティのアクセスのみに使用すること。
+
+**Good**
+```
+view.backgroundColor = [UIColor redColor];
+[UIApplication sharedApplication].delegate;
+```
+
+**Not**
+```
+[view setBackgroundColor:[UIColor redColor]];
+UIApplication.sharedApplication.delegate;
+```
+
+## 命名規則 <a name="naming">
+
+### 変数
+
+**MUST** :キャメルシンタックスを使用すること
+**MUST** :単語を省略しないこと
+
+**Good**
+```
+UIButton *button;
+```
+
+**Not**
+```
+UIButton *btn;
+```
+
+### 列挙型
+
+**SHOULD**: 特定のクラスで使用する場合、クラス名をプレフィックスとすること
+
+**Good**
+```
+typedef NS_ENUM(NSInteger, FooType){
+    FooTypeA,
+    FooTypeB,
+    FooTypeC,
+};
+
+@interface Book
+@property (nonatomic) FooType type
+@end
+```
+
+### 定数
+
+**SHOULD**: 'k'をプレフィックスとすること
+
+```
+const CGFloat kBoxHeight;
+
+NSString *const kBoxName;
+```
+
+
+## プロパティ属性 <a name="property-attributes">
+
+**MUST**: 常に`nonatmic`を指定すること
+**MUST**: デリゲートプロパティには`weak`を指定すること
+**MUST**: Mutableなサブクラスを持っている型にはcopyを指定すること
+
+**SHOULD**: Outletは基本的に`weak`を指定すること
+
+**Good**
+```
+@property (nonatomic, weak) IBOutlet UIView *contentView;
+@property (nonatomic, weak) id delegate;
+@property (nonatomic, copy) NSString *title;
+```
+
+**Not**
+```
+@property id obj;
+@property (nonatomic, strong) id delegate;
+@property (nonatomic, strong) IBOutlet UIView *contentView;
+```
+
+**MUST**: `readonly`と対応するプロパティには`readWrite`を明示すること
+
+```
+/**
+ * Foo.h
+ */
+@interface Foo
+@property (nonatomic, readonly) id obj;
+@end
+
+/**
+ * Foo.m
+ */
+@interface Foo ()
+@property (nonatomic, readwrite) id obj;
+@end
+```
+
+**MUST**: ブロック型のプロパティには`copy`を指定する
+
+```
+typedef void (^Foo)();
+@property (nonatomic, copy) Foo foo;
+
+@property (nonatomic, copy) void(^bar)();
+```
