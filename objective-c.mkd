@@ -3,8 +3,7 @@
 - [ドット演算子](#dot-notation-syntax)
 - [命名規則](#naming)
 - [プロパティ属性](#property-attributes)
-
-- []
+- [コメント](#comments)
 
 ## ドット演算子 <a name="dot-notation-syntax">
 
@@ -115,3 +114,30 @@ typedef void (^Foo)();
 
 @property (nonatomic, copy) void(^bar)();
 ```
+
+
+## コメント <a href="comments">
+
+**MUST**: クラス名、メソッド名、プロパティ名にはAppleDoc形式で記述すること
+
+AppleDocは`/**`で始まる
+
+```
+/**
+ *  #description#
+ *
+ *  @param fizz #description#
+ *  @param fizz #description#
+ *
+ *  @return #return value description#
+ */
+- (NSString *)fooWithBazz:(NSInteger)bazz fizz:(NSString *)fizz;
+```
+
+```
+/** Foo */
+@interface Foo
+@end
+```
+
+- [詳細](https://github.com/tomaz/appledoc/blob/master/CommentsFormattingStyle.markdown)
