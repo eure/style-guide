@@ -107,6 +107,20 @@ func AwesomeGetTotal(number int) int {
 
 ## コメント <a name="comments">
 
+- **MUST**: コメントを使用する場合、識別子の後ろに空白を挿入すること
+
+**Good**
+
+```
+// Something
+```
+
+**Not**
+
+```
+//Something
+```
+
 - **MUST**: ドキュメンテーションコメントは一行につき80文字とする
 - **MUST**: ドキュメンテーションコメントは[TomDoc](http://tomdoc.org)を標準とする。
 
