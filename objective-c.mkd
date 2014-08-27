@@ -25,8 +25,8 @@ UIApplication.sharedApplication.delegate;
 
 ### 変数
 
-**MUST** :キャメルシンタックスを使用すること
-**MUST** :単語を省略しないこと
+- **MUST**: キャメルケースを使用すること
+- **MUST**: 単語を省略しないこと
 
 **Good**
 ```
@@ -40,7 +40,7 @@ UIButton *btn;
 
 ### 列挙型
 
-**SHOULD**: 特定のクラスで使用する場合、クラス名をプレフィックスとすること
+- **SHOULD**: 特定のクラスで使用する場合、クラス名をプレフィックスとすること
 
 **Good**
 ```
@@ -57,7 +57,7 @@ typedef NS_ENUM(NSInteger, FooType){
 
 ### 定数
 
-**SHOULD**: 'k'をプレフィックスとすること
+- **SHOULD**: 'k'をプレフィックスとすること
 
 ```
 const CGFloat kBoxHeight;
@@ -68,11 +68,11 @@ NSString *const kBoxName;
 
 ## プロパティ属性 <a name="property-attributes">
 
-**MUST**: 常に`nonatmic`を指定すること
-**MUST**: デリゲートプロパティには`weak`を指定すること
-**MUST**: Mutableなサブクラスを持っている型にはcopyを指定すること
+- **MUST**: 常に`nonatmic`を指定すること
+- **MUST**: デリゲートプロパティには`weak`を指定すること
+- **MUST**: Mutableなサブクラスを持っている型にはcopyを指定すること
 
-**SHOULD**: Outletは基本的に`weak`を指定すること
+- **SHOULD**: Outletは基本的に`weak`を指定すること
 
 **Good**
 ```
@@ -88,7 +88,7 @@ NSString *const kBoxName;
 @property (nonatomic, strong) IBOutlet UIView *contentView;
 ```
 
-**MUST**: `readonly`と対応するプロパティには`readWrite`を明示すること
+- **MUST**: `readonly`と対応するプロパティには`readWrite`を明示すること
 
 ```
 /**
@@ -106,7 +106,7 @@ NSString *const kBoxName;
 @end
 ```
 
-**MUST**: ブロック型のプロパティには`copy`を指定する
+- **MUST**: ブロック型のプロパティには`copy`を指定する
 
 ```
 typedef void (^Foo)();
@@ -118,7 +118,7 @@ typedef void (^Foo)();
 
 ## コメント <a href="comments">
 
-**MUST**: クラス名、メソッド名、プロパティ名にはAppleDoc形式で記述すること
+- **MUST**: クラス名、メソッド名、プロパティ名にはAppleDoc形式で記述すること
 
 AppleDocは`/**`で始まる
 
