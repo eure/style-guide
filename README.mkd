@@ -18,5 +18,5 @@
 
 ## Maintainer
 
-- Shintaro Kaneko <shintaro.kaneko@eure.jp>
+[Contributors](https://github.com/eure/style-guide/graphs/contributors)
 
