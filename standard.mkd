@@ -121,5 +121,4 @@ func AwesomeGetTotal(number int) int {
 ```
 
 - **MUST**: ドキュメンテーションコメントは一行につき80文字とする
-- **MUST**: ドキュメンテーションコメントは[TomDoc](http://tomdoc.org)を標準とする。
 
