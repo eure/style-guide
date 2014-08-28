@@ -1,2 +1,8 @@
 # Javaコーディング規約
 
+- [コメント](#comments)
+
+## コメント <a name="comments">
+
+http://www.oracle.com/technetwork/java/javase/documentation/index-137868.html
+
