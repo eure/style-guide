@@ -116,7 +116,7 @@ typedef void (^Foo)();
 ```
 
 
-## コメント <a href="comments">
+## コメント <a name="comments">
 
 - **MUST**: クラス名、メソッド名、プロパティ名にはAppleDoc形式で記述すること
 
