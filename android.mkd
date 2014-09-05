@@ -1,0 +1,5 @@
+# Androidコーディング規約
+
+Show [Code Style Guidelines for Contributors](http://source.android.com/source/code-style.html)
+[和訳](http://www.textdrop.net/android/code-style-ja.html)
+
