@@ -45,3 +45,5 @@ __良質のコーディング標準は多くの相乗効果を生む__
 
 [Contributors](https://github.com/eure/style-guide/graphs/contributors)
 
+
+Join the chat at https://gitter.im/eure/style-guide
