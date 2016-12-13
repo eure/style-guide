@@ -367,10 +367,10 @@ class MyClass
 
 ```kotlin
 // GOOD
-if (isFoo) doSomething() else doAnotherThing()
+val thing = if (isFoo) doSomething() else doAnotherThing()
 
 // BAD
-if(longBooleanValue) somethingLongLongFunction() else somethingLongLongLongFunction()
+val thing = if(longBooleanValue) somethingLongLongFunction() else somethingLongLongLongFunction()
 ```
 
 ### Lambda expressions
