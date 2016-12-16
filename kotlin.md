@@ -1,14 +1,11 @@
 # Naming
 ## Case defined
 1. 言葉を素のASCIIに変換し、アポストロフィを除く。 (e.g. `Müller’s algorithm` -> `Muellers algorithm`)
-
 1. スペースや残っている句読点で分離し、単語に分割する。
-
 1. すべての単語を小文字にする。
-
 1. すべての単語をcaseに合わせて連結する。
 
-### Small camel case
+### Lower camel case
 最初の単語を除いて全ての単語の頭文字を大文字にして連結する。
 
 | Prose form | Correct | Incorrect |
@@ -17,7 +14,7 @@
 | new customer ID | newCustomerId | newCustomerID |
 | supports IPv6 on iOS| supportsIpv6OnIos | supportsIPv6OnIOS |
 
-### Large camel Case
+### Upper camel Case
 全ての単語の頭文字を大文字にして連結する。
 
 | Prose form | Correct | Incorrect |
@@ -26,7 +23,7 @@
 | new customer ID | NewCustomerId | NewCustomerID |
 | supports IPv6 on iOS| SupportsIpv6OnIos | SupportsIPv6OnIOS |
 
-### Small snake Case
+### Lower snake Case
 全ての単語を`_`で連結する。
 
 | Prose form | Correct | Incorrect |
@@ -35,7 +32,7 @@
 | new customer ID | new_customer_id | new_customer_ID |
 | supports IPv6 on iOS| supports_ipv6_on_ios | supports_IPv6_on_iOS |
 
-### Large snake Case
+### Upper snake Case
 全ての単語の頭文字を大文字にして`_`で連結する。
 
 | Prose form | Correct | Incorrect |
@@ -60,7 +57,7 @@ package jp.eure.android.pairs.domain.use_case
 ```
 
 ## Class, Object, Interface, Enum
-- ラージキャメルケースで命名する。
+- Upper camel caseで命名する。
 
 ```kotlin
 // GOOD
@@ -71,7 +68,7 @@ class myClass
 ```
 
 ### Enum Constants
-- ラージスネークケースで命名する。
+- Upper snake caseで命名する。
 
 ```kotlin
 // GOOD
@@ -88,7 +85,7 @@ enum class MyEnum {
 ```
 
 ## Functions
-- スモールキャメルケースで命名する。
+- Lower camel caseで命名する。
 
 ```kotlin
 // GOOD
@@ -99,7 +96,7 @@ fun DoSomething()
 ```
 
 ## Properties and Variables
-- スモールキャメルケースで命名する。
+- Lower camel caseで命名する。
 
 ```kotlin
 // GOOD
@@ -108,7 +105,7 @@ val myVal = 0
 // BAD
 val MyVal = 0
 ```
-- companion object内の定数はラージスネークケースで命名する。
+- companion object内の定数はUpper snake caseで命名する。
 
 ```kotlin
 // GOOD
@@ -143,7 +140,7 @@ class MyClass {
 ```
 
 ## Resorces
-- リソースのファイル名、idはスモールスネークケースで命名する。
+- リソースのファイル名、idはLower snake caseで命名する。
 
 # Format
 ## Package Statement
